@@ -1,3 +1,17 @@
+@font-face {
+    font-family: RenaultLife;
+    src: url('../font/RenaultLife.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: RenaultLife;
+    src: url('../font/RenaultLife-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +21,7 @@
 body,
 html {
     width: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'RenaultLife', serif;
 }
 .no_scroll{
     overflow: hidden;
