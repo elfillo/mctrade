@@ -75,7 +75,7 @@
         width: 100%
         //display: flex
         align-items: center
-        display: none
+        //display: none
       img
         width: 100%
         height: auto
@@ -173,13 +173,6 @@
         img
           display: block
           margin: auto
-      //&:hover
-      //  transition: 0.3s
-      //  .text_hover
-      //    display: block
-      //  .icon
-      //    img
-      //      opacity: 0.2
 
 .hardware
   width: 100%
@@ -314,15 +307,25 @@
         display: flex
         justify-content: space-between
         padding: 0 40px
+        @media screen and (max-width: 1420px)
+          > span
+            width: 30%
+          > input[type='submit']
+            width: 30%
         @media screen and (max-width: 1024px)
           flex-direction: column
           padding: 0 10px
+          > span
+            width: 100%
+          > input[type='submit']
+            width: 100%
         input
           width: 394px
           height: 55px
           border-radius: 10px
           @media screen and (max-width: 1420px)
-            width: 30%
+            //width: 30%
+            width: 100%
           @media screen and (max-width: 1024px)
             width: 100%
             margin-bottom: 10px

@@ -113,14 +113,6 @@ Template Name: Главная
             <?php endforeach;?>
         </div>
         <?php echo do_shortcode('[contact-form-7 id="34" title="Имя и телефон"]')?>
-        <!--<div class="form">
-            <div class="title">Оставьте свои контакты для уточнения информации</div>
-            <div class="inputs">
-                <input class="border_blue" type="text" placeholder="Ваше Имя">
-                <input class="border_blue" type="text" placeholder="Ваш телефон">
-                <input class="orange" type="submit" value="Отправить">
-            </div>
-        </div>-->
     </div>
 </section>
 <section class="hardware gallery_hardware">
@@ -140,19 +132,19 @@ Template Name: Главная
         <div class="title">СТАТИСТИКА РАБОТЫ С 2015 ГОДА</div>
         <div class="list">
             <div class="item">
-                <div class="number">303</div>
+                <div class="number benefits__number">303</div>
                 <div class="text">ДОВОЛЬНЫХ <br/>КЛИЕНТОВ</div>
             </div>
             <div class="item">
-                <div class="number">541</div>
+                <div class="number benefits__number">541</div>
                 <div class="text">Поставка</div>
             </div>
             <div class="item">
-                <div class="number">258</div>
+                <div class="number benefits__number">258</div>
                 <div class="text">установок</div>
             </div>
             <div class="item">
-                <div class="number">874</div>
+                <div class="number benefits__number">874</div>
                 <div class="text">ПОМОЩИ В РАЗРАБОТКЕ ДОКУМЕНТОВ</div>
             </div>
         </div>

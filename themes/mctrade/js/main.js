@@ -57,3 +57,24 @@ function getDetail(id){
         }
     });
 }
+
+$(document).ready(function(){
+    let startCount = true;
+    $(window).scroll(function() {
+        let elem = $('.statistics');
+        let hT = elem.offset().top,
+            hH = elem.outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+
+        if (wS > (hT+hH-wH)){
+            if(startCount){
+                $('.benefits__number').spincrement({
+                    thousandSeparator: "",
+                    duration: 3000
+                });
+            }
+            startCount = false;
+        }
+    });
+});

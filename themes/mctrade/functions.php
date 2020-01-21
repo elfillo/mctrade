@@ -10,6 +10,7 @@ add_action('wp_enqueue_scripts', 'enqueue_styles');
 function enqueue_script(){
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jq', get_template_directory_uri() .'/js/jquery-3.2.1.min.js', null, true);
+	wp_enqueue_script('spincrement', get_template_directory_uri() .'/js/jquery.spincrement.min.js', array('jq'), true);
 	wp_enqueue_script('main', get_template_directory_uri() .'/js/main.js', array('jq'), null, true);
 	//wp_enqueue_script('map', get_template_directory_uri() .'/js/main.js', array('jq'), null, true);
 	wp_enqueue_script('swiperLib', get_template_directory_uri() .'/js/swiper.min.js', array('jq'), null, true);
