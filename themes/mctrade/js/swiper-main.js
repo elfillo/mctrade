@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var hardware = new Swiper('.hardware', {
     slidesPerView: 3,
     spaceBetween: 30,
     breakpoints: {
@@ -20,20 +20,21 @@ var swiper = new Swiper('.swiper-container', {
 
 var gallery = new Swiper('.hardware_gallery', {
     effect: 'coverflow',
-    grabCursor: true,
-    //centeredSlides: true,
     autoplay: {
         delay: 3000,
     },
-    slidesPerView: 3,
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
     coverflowEffect: {
-        rotate: -30,
+        rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
         slideShadows : true,
     },
-    /*pagination: {
+    pagination: {
         el: '.swiper-pagination',
-    },*/
+    },
 });

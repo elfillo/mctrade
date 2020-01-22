@@ -85,7 +85,7 @@ Template Name: Главная
 <section class="hardware">
     <div class="title">Виды оборудования</div>
     <div class="container">
-        <div class="swiper-container">
+        <div class="swiper-container hardware">
             <div class="swiper-wrapper">
                 <?php $hardwares = get_posts(array('post_type' => 'post_hardware', 'numberposts'      => 999));?>
                 <?php foreach ($hardwares as $hardware):?>
