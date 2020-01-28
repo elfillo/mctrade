@@ -45,4 +45,7 @@ function get_page_id($page){
 
 	return $pages[0]->ID;
 }
+function get_uri($path){
+	echo get_template_directory_uri().'/'.$path;
+}
 ?>

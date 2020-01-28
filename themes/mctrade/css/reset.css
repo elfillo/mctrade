@@ -22,6 +22,7 @@ body,
 html {
     width: 100%;
     font-family: 'RenaultLife', serif;
+    overflow-x: hidden;
 }
 .no_scroll{
     overflow: hidden;

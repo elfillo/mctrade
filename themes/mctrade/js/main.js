@@ -22,15 +22,11 @@ $(document).ready(function () {
       $('.modal_contacts').css({'display': 'flex'});
    });
     $('.open_modal_buy').click(function () {
-        /*var name = this.parentNode.getAttribute('value');
-        $('.modal_buy .hidden').value = name;*/
-
         $('.modal_buy').css({'display': 'flex'});
     });
     $('.open_modal_detail').click(function () {
         $('.modal_detail').css({'display': 'flex'});
     });
-
 
     //close modal
    $('.modal_close').click(function () {
@@ -50,7 +46,6 @@ function getDetail(id){
         context: this,
         success: function (response) {
             $('.wrapper_detail .content').html(response);
-            console.log('Успешная отправка');
         },
         error: function () {
             $('.wrapper_detail .content').html('Ошибка загрузки контента, попробуйте еще раз.');
@@ -78,3 +73,10 @@ $(document).ready(function(){
         }
     });
 });
+
+function getInfo(data){
+    $('.modal_info .content').html(data);
+    $('.modal_info').css({'display': 'flex'});
+}
+
+

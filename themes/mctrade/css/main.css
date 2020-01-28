@@ -119,6 +119,7 @@
       @media screen and (max-width: 1024px) {
         .gen_dir .container .img {
           width: 100%;
+          height: auto;
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center; } }
@@ -196,13 +197,28 @@
     .how_we_work .list .item__hover .icon img {
       opacity: 0.2; }
     .how_we_work .list .item__hover .text_hover {
+      width: 80%;
+      margin-left: 10%;
       display: block !important;
       position: absolute;
       top: 50%;
       text-align: center; }
     .how_we_work .list .item {
       width: 212px;
-      height: 240px;
+      height: 310px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       border-radius: 10px;
       border: 1px solid #f05a24;
       background-color: #ffffff;
@@ -217,15 +233,13 @@
       .how_we_work .list .item .text_hover {
         display: none;
         position: absolute;
-        top: 50%;
+        top: 40%;
         text-align: center; }
       .how_we_work .list .item .text {
         width: 90%;
         text-align: center;
         line-height: 18px;
-        position: absolute;
-        bottom: 5px;
-        left: 5%; }
+        margin-top: auto; }
       .how_we_work .list .item .icon {
         margin: 0 auto;
         margin-top: 25px;
@@ -233,6 +247,24 @@
         .how_we_work .list .item .icon img {
           display: block;
           margin: auto; }
+      .how_we_work .list .item .button {
+        width: 90%;
+        height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        background-color: #f05a24;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: auto;
+        margin-bottom: 10px; }
 
 .hardware {
   width: 100%;
@@ -641,11 +673,14 @@
       -ms-flex-pack: center;
           justify-content: center; }
   .modal .wrapper {
-    max-width: 90%;
+    max-width: 700px;
     padding: 20px;
     border-radius: 10px;
     background-color: #ffffff;
     position: relative; }
+    @media screen and (max-width: 1024px) {
+      .modal .wrapper {
+        max-width: 95%; } }
     .modal .wrapper .modal_close {
       width: 20px;
       height: 20px;

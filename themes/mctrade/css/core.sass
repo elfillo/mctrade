@@ -73,6 +73,7 @@
       overflow: hidden
       @media screen and (max-width: 1024px)
         width: 100%
+        height: auto
         //display: flex
         align-items: center
         //display: none
@@ -138,13 +139,19 @@
         img
           opacity: 0.2
       .text_hover
+        width: 80%
+        margin-left: 10%
         display: block !important
         position: absolute
         top: 50%
         text-align: center
     .item
       width: 212px
-      height: 240px
+      height: 310px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
       border-radius: 10px
       border: 1px solid #f05a24
       background-color: #ffffff
@@ -157,15 +164,13 @@
       .text_hover
         display: none
         position: absolute
-        top: 50%
+        top: 40%
         text-align: center
       .text
         width: 90%
         text-align: center
         line-height: 18px
-        position: absolute
-        bottom: 5px
-        left: 5%
+        margin-top: auto
       .icon
         margin: 0 auto
         margin-top: 25px
@@ -173,6 +178,18 @@
         img
           display: block
           margin: auto
+      .button
+        width: 90%
+        height: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: #f05a24
+        color: #fff
+        border-radius: 4px
+        cursor: pointer
+        margin-top: auto
+        margin-bottom: 10px
 
 .hardware
   width: 100%
@@ -480,11 +497,13 @@
   align-items: center
   justify-content: center
   .wrapper
-    max-width: 90%
+    max-width: 700px
     padding: 20px
     border-radius: 10px
     background-color: #ffffff
     position: relative
+    @media screen and (max-width: 1024px)
+      max-width: 95%
     .modal_close
       width: 20px
       height: 20px
