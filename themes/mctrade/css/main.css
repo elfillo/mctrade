@@ -136,7 +136,7 @@
       .gen_dir .container .text .title {
         width: 100%;
         text-align: center;
-        font-size: 18px;
+        font-size: 40px;
         font-weight: 700;
         margin: 13px 0 25px; }
       .gen_dir .container .text .content {
@@ -171,6 +171,7 @@
   .how_we_work .title {
     width: 100%;
     text-align: center;
+    font-size: 40px;
     font-weight: 700;
     padding-top: 50px; }
     @media screen and (max-width: 1024px) {
@@ -276,6 +277,7 @@
   .hardware .title {
     width: 100%;
     text-align: center;
+    font-size: 40px;
     margin-bottom: 50px; }
     @media screen and (max-width: 1024px) {
       .hardware .title {
@@ -377,6 +379,7 @@
   .brands .container .title {
     width: 100%;
     text-align: center;
+    font-size: 40px;
     margin-bottom: 50px; }
     @media screen and (max-width: 1024px) {
       .brands .container .title {
@@ -623,6 +626,7 @@
           margin-bottom: 20px; } }
       .footer .container .text .title {
         text-align: center;
+        font-size: 32px;
         margin-bottom: 40px;
         text-transform: uppercase; }
       .footer .container .text .button {
@@ -665,7 +669,7 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -678,7 +682,8 @@
     padding: 20px;
     border-radius: 10px;
     background-color: #ffffff;
-    position: relative; }
+    position: relative;
+    border: 1px solid #f05a24; }
     @media screen and (max-width: 1024px) {
       .modal .wrapper {
         max-width: 95%; } }

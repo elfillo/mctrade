@@ -36,7 +36,7 @@ Template Name: Главная
                         'img'   => 'img/icons/icon_2.png',
                         'title' => 'Опрос и составление технического задания',
                         'hover' => 'Срок исполнения до 10 дней',
-                        'modal' => ''
+                        'modal' => 'Этот этап уже связан с уточнением параметров оборудования, технических характеристик, сроков выполнения заявки, условий при которых заявка удовлетворит всем требования Заказчика. Мы работаем по принципу одного окна и это облегчает жизнь нашим заказчикам – специалист который работает с вами будет отвечать на все ваши вопросы и помогать вам в достижении конечного результата.'
                     ],
                     [
                         'img'   => 'img/icons/icon_3.png',
@@ -112,7 +112,7 @@ Template Name: Главная
 </section>
 <section class="brands">
     <div class="container">
-        <div class="title">Бренды оборудование которое вы можете приобрести</div>
+        <div class="title">Бренды оборудования которое вы можете приобрести</div>
         <div class="list">
             <?php foreach (get_field('brands', $fieldID) as $brand):?>
                 <div class="item"><img src="<?php echo $brand ?>" alt="#"></div>
@@ -143,11 +143,11 @@ Template Name: Главная
             </div>
             <div class="item">
                 <div class="number benefits__number">541</div>
-                <div class="text">Поставка</div>
+                <div class="text">ПОСТАВКА</div>
             </div>
             <div class="item">
                 <div class="number benefits__number">258</div>
-                <div class="text">установок</div>
+                <div class="text">УСТАНОВОК</div>
             </div>
             <div class="item">
                 <div class="number benefits__number">874</div>
