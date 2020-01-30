@@ -77,7 +77,9 @@
   @media screen and (max-width: 1024px) {
     .banner_1 {
       background: url("../img/bg_1_mobile.jpg");
-      height: calc(100vh - 141px); } }
+      height: calc(100vh - 141px);
+      background-repeat: no-repeat;
+      background-size: cover; } }
   .banner_1 span {
     font-size: 70px;
     font-weight: 700;
