@@ -128,7 +128,8 @@
         height: auto; }
     .gen_dir .container .text {
       width: 55%;
-      color: #414141; }
+      color: #414141;
+      font-size: 18px; }
       @media screen and (max-width: 1024px) {
         .gen_dir .container .text {
           width: 100%; } }
