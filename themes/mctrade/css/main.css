@@ -76,6 +76,7 @@
           justify-content: center; }
   @media screen and (max-width: 1024px) {
     .banner_1 {
+      background: url("../img/bg_1_mobile.jpg");
       height: calc(100vh - 141px); } }
   .banner_1 span {
     font-size: 70px;
@@ -341,6 +342,10 @@
   height: 496px;
   background-position: center;
   background-size: cover; }
+  @media screen and (max-width: 1024px) {
+    .gallery_hardware .swiper-slide {
+      width: 100%;
+      height: 200px; } }
 
 .swiper-button-next {
   background-image: url("../img/left_arrow.png") !important;
