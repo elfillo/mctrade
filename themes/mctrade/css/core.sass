@@ -2,7 +2,6 @@ $orange: #f05a24
 .container
   width: 1420px
   margin: 0 auto
-
 .header
   width: 100%
   padding: 8px 0
@@ -46,7 +45,7 @@ $orange: #f05a24
   align-items: center
   justify-content: center
   @media screen and (max-width: 1024px)
-    height: 200px
+    height: calc(100vh - 141px)
   span
     font-size: 70px
     font-weight: 700
@@ -143,8 +142,7 @@ $orange: #f05a24
         img
           opacity: 0.2
       .text_hover
-        width: 80%
-        margin-left: 10%
+        width: 100%
         display: block !important
         position: absolute
         top: 50%
@@ -204,6 +202,7 @@ $orange: #f05a24
     width: 100%
     text-align: center
     font-size: 40px
+    font-weight: 700
     margin-bottom: 50px
     @media screen and (max-width: 1024px)
       margin-bottom: 20px
@@ -250,6 +249,8 @@ $orange: #f05a24
             background-color: #f05a24
 
 .gallery_hardware
+  .title
+    font-weight: 400
   .container
     padding: 0
   .swiper-slide
@@ -292,7 +293,8 @@ $orange: #f05a24
     .title
       width: 100%
       text-align: center
-      font-size: 40px
+      font-size: 32px
+      font-weight: 700
       margin-bottom: 50px
       @media screen and (max-width: 1024px)
         margin-bottom: 20px
@@ -323,6 +325,8 @@ $orange: #f05a24
         width: 100%
         text-align: center
         margin: 26px auto
+        font-size: 28px
+        font-weight: 400
         @media screen and (max-width: 1024px)
           margin: 10px auto
       .inputs
@@ -370,6 +374,8 @@ $orange: #f05a24
   .container
     .title
       width: 100%
+      font-size: 40px
+      font-weight: 700
       text-align: center
       color: #fff
     .list

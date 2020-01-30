@@ -76,7 +76,7 @@
           justify-content: center; }
   @media screen and (max-width: 1024px) {
     .banner_1 {
-      height: 200px; } }
+      height: calc(100vh - 141px); } }
   .banner_1 span {
     font-size: 70px;
     font-weight: 700;
@@ -199,8 +199,7 @@
     .how_we_work .list .item__hover .icon img {
       opacity: 0.2; }
     .how_we_work .list .item__hover .text_hover {
-      width: 80%;
-      margin-left: 10%;
+      width: 100%;
       display: block !important;
       position: absolute;
       top: 50%;
@@ -278,6 +277,7 @@
     width: 100%;
     text-align: center;
     font-size: 40px;
+    font-weight: 700;
     margin-bottom: 50px; }
     @media screen and (max-width: 1024px) {
       .hardware .title {
@@ -332,6 +332,8 @@
       .hardware .hardware_item .button_orange {
         background-color: #f05a24; }
 
+.gallery_hardware .title {
+  font-weight: 400; }
 .gallery_hardware .container {
   padding: 0; }
 .gallery_hardware .swiper-slide {
@@ -379,7 +381,8 @@
   .brands .container .title {
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
+    font-weight: 700;
     margin-bottom: 50px; }
     @media screen and (max-width: 1024px) {
       .brands .container .title {
@@ -423,7 +426,9 @@
     .brands .container .form .title {
       width: 100%;
       text-align: center;
-      margin: 26px auto; }
+      margin: 26px auto;
+      font-size: 28px;
+      font-weight: 400; }
       @media screen and (max-width: 1024px) {
         .brands .container .form .title {
           margin: 10px auto; } }
@@ -482,6 +487,8 @@
       padding-top: 20px; } }
   .statistics .container .title {
     width: 100%;
+    font-size: 40px;
+    font-weight: 700;
     text-align: center;
     color: #fff; }
   .statistics .container .list {
