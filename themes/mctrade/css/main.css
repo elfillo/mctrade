@@ -693,6 +693,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .modal .wrapper::-webkit-scrollbar {
+    display: none; }
   .modal .wrapper {
     max-height: 90vh;
     overflow: scroll;
