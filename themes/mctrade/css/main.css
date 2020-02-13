@@ -399,9 +399,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     @media screen and (max-width: 1024px) {
@@ -585,27 +582,31 @@
         .short_form .container_small .title {
           text-align: center;
           margin-bottom: 10px; } }
-    @media screen and (max-width: 1140px) {
-      .short_form .container_small .form_phone {
-        width: 100%; } }
-    .short_form .container_small .form_phone input {
-      height: 30px;
-      border-radius: 5px; }
-    .short_form .container_small .form_phone .phone {
-      width: 240px;
-      margin-right: 13px;
-      padding-left: 15px; }
+    .short_form .container_small .form_phone {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
       @media screen and (max-width: 1140px) {
-        .short_form .container_small .form_phone .phone {
-          width: 100%;
-          margin-bottom: 10px; } }
-    .short_form .container_small .form_phone .submit {
-      width: 143px;
-      background-color: #ffffff; }
-      @media screen and (max-width: 1140px) {
-        .short_form .container_small .form_phone .submit {
-          width: 100%;
-          margin-bottom: 10px; } }
+        .short_form .container_small .form_phone {
+          width: 100%; } }
+      .short_form .container_small .form_phone input {
+        height: 30px;
+        border-radius: 5px; }
+      .short_form .container_small .form_phone .phone {
+        width: 240px;
+        margin-right: 13px;
+        padding-left: 15px; }
+        @media screen and (max-width: 1140px) {
+          .short_form .container_small .form_phone .phone {
+            width: 100%;
+            margin-bottom: 10px; } }
+      .short_form .container_small .form_phone .submit {
+        width: 143px;
+        background-color: #ffffff; }
+        @media screen and (max-width: 1140px) {
+          .short_form .container_small .form_phone .submit {
+            width: 100%;
+            margin-bottom: 10px; } }
 
 .footer {
   width: 100%;
@@ -692,6 +693,8 @@
       -ms-flex-pack: center;
           justify-content: center; }
   .modal .wrapper {
+    max-height: 90vh;
+    overflow: scroll;
     max-width: 700px;
     padding: 20px;
     border-radius: 10px;
@@ -709,7 +712,8 @@
       right: 5px;
       cursor: pointer; }
   .modal .wrapper_buy {
-    width: 1400px; }
+    width: 1400px;
+    max-width: 1400px; }
     @media screen and (max-width: 1410px) {
       .modal .wrapper_buy {
         width: 90%; } }

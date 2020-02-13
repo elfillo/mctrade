@@ -159,10 +159,7 @@ Template Name: Главная
 <section class="short_form">
     <div class="container container_small">
         <div class="title">ЕСЛИ У ВАС ОСТАЛИСЬ ВОПРОСЫ  ОСТАВЬТЕ СВОЙ НОМЕР ТЕЛЕФОНА</div>
-        <div class="form_phone">
-            <input class="phone" type="text" placeholder="">
-            <input class="submit" type="submit" value="ОТПРАВИТЬ">
-        </div>
+        <?php echo do_shortcode('[contact-form-7 id="44" title="Телефон"]')?>
     </div>
 </section>
 <?php get_footer()?>

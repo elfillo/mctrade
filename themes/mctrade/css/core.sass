@@ -307,7 +307,6 @@ $orange: #f05a24
     .list
       width: 100%
       display: flex
-      justify-content: space-between
       flex-wrap: wrap
       @media screen and (max-width: 1024px)
         justify-content: space-around
@@ -439,6 +438,7 @@ $orange: #f05a24
         text-align: center
         margin-bottom: 10px
     .form_phone
+      display: flex
       @media screen and (max-width: 1140px)
         width: 100%
       input
@@ -516,6 +516,8 @@ $orange: #f05a24
   align-items: center
   justify-content: center
   .wrapper
+    max-height: 90vh
+    overflow: scroll
     max-width: 700px
     padding: 20px
     border-radius: 10px
@@ -533,6 +535,7 @@ $orange: #f05a24
       cursor: pointer
   .wrapper_buy
     width: 1400px
+    max-width: 1400px
     @media screen and (max-width: 1410px)
       width: 90%
     .form
