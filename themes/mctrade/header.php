@@ -10,7 +10,7 @@
 <body>
 <header class="header">
     <div class="container">
-        <div class="logo"><img src="<?php echo get_template_directory_uri() ?>/img/logo.png" alt="logo"></div>
+        <div class="logo"></div>
         <div class="btn btn_orange" id="open_modal_contacts">КОНТАКТЫ</div>
     </div>
 </header>

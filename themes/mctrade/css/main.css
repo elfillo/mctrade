@@ -33,9 +33,16 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
-    @media screen and (max-width: 370px) {
-      .header .container .logo {
-        margin-bottom: 10px; } }
+    .header .container .logo {
+      width: 190px;
+      height: 67px;
+      background-image: url("../img/logo.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+      @media screen and (max-width: 370px) {
+        .header .container .logo {
+          margin-bottom: 10px; } }
     .header .container .btn {
       width: 158px;
       height: 44px;
